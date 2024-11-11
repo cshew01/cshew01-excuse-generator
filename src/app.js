@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   // create arrays with excuses
-  const blaming = ["my pet alligator","the car","the plane","my daugter","my computer","the treadmill"];
+  const blaming = ["my pet alligator","the car","the plane","my daughter","my computer","the treadmill"];
   const problem = ["broke","ate","burned","banished","crashed","used a fart gun on"];
   const target = ["my foot","my dinner","the house","the christmas tree","the front door"];
   const when = ["on my birthday","when hell froze over","this morning","three days ago","while I was on the toilet","when the dogs barked"];
@@ -21,6 +21,7 @@ window.onload = function() {
       return `...because ${rndBlaming} ${rndProblem} ${rndTarget} ${rndWhen}!`;
   }
   
+  // send the excuse string to index.html
   let completeExcuse = generator();
   console.log (completeExcuse);
   document.querySelector("#excuse").innerHTML = completeExcuse;
@@ -29,6 +30,5 @@ window.onload = function() {
     console.log (completeExcuse);
     document.querySelector("#excuse").innerHTML = completeExcuse;
   }
-  // return it to the html using the ID
-  console.log("Hello Rigo from the console!");
+  
 };
