@@ -14,11 +14,11 @@ window.onload = function() {
   
   // write a function to randomly select one item from each array
   function generator() {
-      let rndBlaming = blaming[Math.floor(Math.random()*blaming.length)];
-      let rndProblem = problem[Math.floor(Math.random()*problem.length)];
-      let rndTarget = target[Math.floor(Math.random()*target.length)];
-      let rndWhen = when[Math.floor(Math.random()*when.length)];
-      return `...because ${rndBlaming} ${rndProblem} ${rndTarget} ${rndWhen}!`;
+      let randomBlaming = blaming[Math.floor(Math.random()*blaming.length)];
+      let randomProblem = problem[Math.floor(Math.random()*problem.length)];
+      let randomTarget = target[Math.floor(Math.random()*target.length)];
+      let randomWhen = when[Math.floor(Math.random()*when.length)];
+      return `...because ${randomBlaming} ${randomProblem} ${randomTarget} ${randomWhen}!`;
   }
   
   // send the excuse string to index.html
